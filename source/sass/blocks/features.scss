@@ -1,0 +1,34 @@
+.features {
+  background-color: $ebony;
+}
+
+.features__wrapper {
+  padding-top: 18px;
+  padding-left: 80px;
+}
+
+.features__wrapper > .features__title {
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+  max-width: 750px;
+}
+
+.features__item {
+  margin-bottom: 42px;
+}
+
+.features__title {
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.features__text {
+  line-height: 1;
+  color: $golden-yellow;
+  margin: 0;
+}

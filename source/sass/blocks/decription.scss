@@ -1,0 +1,19 @@
+.decription__wrapper {
+  padding-left: 155px;
+  padding-right: 45px;
+}
+
+.decription__block {
+  background-color: $golden-yellow;
+  border-radius: 40px;
+  padding: 12px 30px;
+
+  &:nth-child(2) {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.decription__text {
+  line-height: 1.1;
+}

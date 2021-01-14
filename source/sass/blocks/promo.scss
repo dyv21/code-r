@@ -1,0 +1,18 @@
+.promo {
+  background-color: $golden-yellow;
+}
+
+.promo__wrapper {
+  background: url("../img/promo.png") no-repeat;
+  height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.promo__link {
+  @include btn;
+  background-color: $ebony;
+  color: $white;
+}
