@@ -1,0 +1,30 @@
+.user-data__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 180px;
+  max-width: 700px;
+  padding: 0;
+}
+
+.user-data__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+.user-data__label {
+  min-width: 100px;
+  margin-right: 5px;
+}
+.user-data__input {
+  height: 38px;
+  max-width: 220px;
+}
+
+#birthday {
+  max-width: 160px;
+  font-size: 17px;
+}

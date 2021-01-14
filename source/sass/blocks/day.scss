@@ -2,13 +2,15 @@
   text-align: center;
 }
 .day__title {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: normal;
   display: inline-block;
   border-radius: 10px;
   background-color: $black;
   color: $golden-yellow;
-  padding: 15px 25px;
+  padding: 25px 36px 25px 50px;
   text-align: center;
+  margin-bottom: 37px;
 }
 .day__list {
   list-style: none;
@@ -16,20 +18,27 @@
 }
 .day__item {
   display: flex;
-  margin-bottom: 10px;
-  height: 50px;
+  height: 48px;
+  text-align: right;
+  position: relative;
 }
 .day__item-name {
-  width: 250px;
+  width: 305px;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 40px;
   text-align: right;
+  align-self: flex-start;
 }
-.day__item-span {
+.day__item-p {
+  font-size: 24px;
   background-color: $golden-yellow;
-  padding: 5px 20px;
+  padding: 2px 30px 2px 0px;
+  margin: 0;
 }
 .day__item-text {
+  font-size: 22px;
+  text-align: left;
+  max-width: 650px;
   margin: 0;
   align-self: flex-end;
 }

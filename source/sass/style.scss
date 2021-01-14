@@ -2,7 +2,6 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
-@import "global/mixin.scss";
 
 // blocks
 
@@ -18,3 +17,8 @@
 @import "blocks/program.scss";
 @import "blocks/day.scss";
 @import "blocks/speaker.scss";
+@import "blocks/registration.scss";
+@import "blocks/form.scss";
+@import "blocks/user-data.scss";
+@import "blocks/user-experience.scss";
+@import "blocks/footer.scss";

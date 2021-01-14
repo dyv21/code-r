@@ -5,30 +5,55 @@
 .features__wrapper {
   padding-top: 18px;
   padding-left: 80px;
+  padding-bottom: 46px;
 }
 
 .features__wrapper > .features__title {
+  font-size: 24px;
+  font-weight: normal;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 65px;
 }
 
 .features__list {
   list-style: none;
-  max-width: 750px;
+  max-width: 780px;
 }
 
 .features__item {
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 }
 
 .features__title {
   font-weight: normal;
   color: white;
+  letter-spacing: normal;
   text-transform: uppercase;
   margin: 0;
+
+  span {
+    color: $golden-yellow;
+  }
 }
 
 .features__text {
-  line-height: 1;
+  line-height: 1.1;
+  letter-spacing: 1.1px;
   color: $golden-yellow;
   margin: 0;
+
+  span {
+    color: $white;
+  }
+}
+
+.page-main__features {
+  .features__wrapper {
+    padding-left: 130px;
+  }
+
+  .features__item {
+    margin-bottom: 50px;
+  }
 }

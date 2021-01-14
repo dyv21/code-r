@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.speaker__speaker-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
 .speaker__title {
   font-size: 18px;
   font-weight: normal;
@@ -12,13 +19,20 @@
   color: $black;
   padding: 15px 50px;
   text-align: center;
+  margin-bottom: 40px;
 }
+
 .speaker__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: none;
   padding: 0;
   list-style: none;
+
+  &--active {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 }
 
 .speaker__item {
@@ -51,4 +65,92 @@
 }
 .speaker__work {
   opacity: 0.4;
+}
+
+.speaker__nav {
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .speaker__nav {
+    max-width: 580px;
+  }
+}
+
+.speaker__prev-btn,
+.speaker__next-btn {
+  width: 40px;
+  height: 40px;
+  border: 6px solid $black;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .speaker__prev-btn,
+  .speaker__next-btn {
+    width: 25px;
+    height: 25px;
+    border-width: 3px;
+  }
+}
+
+.speaker__prev-btn {
+  transform: rotate(45deg);
+  border-right: none;
+  border-top: none;
+}
+
+.speaker__next-btn {
+  border-left: none;
+  border-top: none;
+  transform: rotate(-45deg);
+}
+
+.speaker__prev-btn:hover,
+.speaker__next-btn:hover {
+  opacity: 0.5;
+}
+
+.speaker__dots {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .speaker__dots {
+    bottom: 0;
+  }
+}
+
+.speaker__dots-item {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: $pink-swan;
+  cursor: pointer;
+
+  &--active {
+    background-color: $ebony;
+  }
+}
+
+@media (max-width: 768px) {
+  .speaker__dots-item {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.speaker__dots-item:not(:last-child) {
+  margin-right: 100px;
 }

@@ -1,18 +1,38 @@
 .for-whom__wrapper {
-  padding: 0 100px;
 }
 
 .for-whom__title {
   text-transform: uppercase;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
+
 .for-whom__list {
-  max-width: 500px;
-  list-style: square outside;
+  width: 640px;
+  list-style: none;
   margin-left: auto;
+  padding: 0;
+}
+
+.for-whom__item {
+  position: relative;
+  margin-bottom: 3px;
+
+  &::before {
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: $black;
+  }
 }
 
 .for-whom__text {
-  line-height: 1.1;
+  max-width: 600px;
+  font-size: 24px;
+  line-height: 1;
   margin: 0;
 }

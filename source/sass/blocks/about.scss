@@ -1,3 +1,23 @@
 .about__decription {
   margin-bottom: 40px;
 }
+
+.about {
+  .decription__block::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 31px;
+    width: 100%;
+    height: 28px;
+    background-color: $black;
+  }
+}
+
+.about__features {
+  margin-bottom: 83px;
+}
+
+.about__for-whom {
+  margin-bottom: 111px;
+}
