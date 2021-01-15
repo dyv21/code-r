@@ -15,9 +15,9 @@
     @media (max-width: 950px) {
       top: 26px;
       height: 24px;
-     }
+    }
 
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
       top: 24px;
       height: 23px;
     }
@@ -35,8 +35,7 @@
 .about__for-whom {
   margin-bottom: 111px;
 
-  @media (max-width:950px) {
+  @media (max-width: 950px) {
     margin-bottom: 60px;
   }
 }
-

@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width:950px) {
+  @media (max-width: 950px) {
     padding-right: 20px;
-   }
+  }
 }
 
 .decription__block {
@@ -19,15 +19,15 @@
     margin-top: 16px;
     padding-bottom: 40px;
 
-    @media (max-width:950px) {
+    @media (max-width: 950px) {
       padding-bottom: 20px;
-     }
+    }
   }
 
-  @media (max-width:950px) {
+  @media (max-width: 950px) {
     padding: 9px 20px;
     max-width: 95%;
-   }
+  }
 }
 
 .decription__text {
@@ -50,9 +50,9 @@
       background-color: $black;
       z-index: 9;
 
-      @media (max-width:950px) {
+      @media (max-width: 950px) {
         height: 24px;
-       }
+      }
 
       @media (max-width: 768px) {
         height: 23px;
@@ -63,9 +63,9 @@
 
   @media (max-width: 950px) {
     font-size: 20px;
-   }
+  }
 
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 18px;
-   }
+  }
 }

@@ -1,25 +1,45 @@
+.registration__wrapper {
+  text-align: center;
+}
+
 .registration__title {
   text-align: center;
   text-transform: uppercase;
   font-size: 23.5px;
   font-weight: normal;
   letter-spacing: normal;
-  margin-bottom: 55px;
   margin-bottom: 0;
 }
+
 .registration__text {
   text-transform: lowercase;
   text-align: center;
   margin-bottom: 50px;
 }
+
 .registration__block {
   text-align: center;
   margin-bottom: 100px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background: url("../img/icon-glasses.svg") no-repeat;
+    background-size: 250px auto;
+    width: 250px;
+    height: 50px;
+  }
 
   @media (max-width: 950px) {
     margin-bottom: 60px;
   }
 }
+
 .registration__block-link {
   display: inline-block;
   text-align: center;
@@ -36,9 +56,9 @@
     font-size: 20px;
     max-width: 180px;
     padding: 13px 0;
-   }
+  }
 
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     margin-bottom: 10px;
-   }
+  }
 }
