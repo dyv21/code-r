@@ -1,3 +1,25 @@
+
+const header = document.querySelector('.header__wrapper')
+const navMain = header.querySelector('.main-nav');
+const navToggle = navMain.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click',() => {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+    header.style = `margin-bottom: 65px`;
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+    header.style = '';
+  };
+});
+
+
+//Slider
+
 const sliderList = document.querySelector('.speaker__speaker-wrapper');
 const sliderItems = sliderList.querySelectorAll('.speaker__list');
 const activeSlide = sliderList.querySelector('.speaker__list--active');

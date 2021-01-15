@@ -10,6 +10,14 @@
     height: 3px;
     background-color: $pink-swan;
   }
+
+  @media (max-width: 950px) {
+   max-width: 90%;
+   }
+
+   @media (max-width: 400px) {
+    flex-direction: column;
+  }
 }
 
 .footer__social-list {
@@ -18,6 +26,32 @@
   list-style: none;
   padding: 0;
 }
+
 .footer__social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.footer__social-img {
+  @media (max-width: 768px) {
+    width: 50px;
+  }
+}
+
+.footer__text {
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.footer__logo,
+.footer__social {
+  @media (max-width: 400px) {
+    align-self: center;
+  }
+}
+
+.footer__logo-link {
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 }

@@ -1,19 +1,39 @@
 .page-main__promo {
   margin-bottom: 72px;
+
+  @media (max-width:950px) {
+    margin-bottom: 50px;
+  }
 }
 
 .page-main__program {
   margin-bottom: 55px;
+
+  @media (max-width:950px) {
+    margin-bottom: 40px;
+  }
 }
 
 .page-main__features {
   margin-bottom: 55px;
+
+  @media (max-width:950px) {
+    margin-bottom: 30px;
+  }
 }
 
 .page-main__speaker {
   margin-bottom: 55px;
+
+  @media (max-width:950px) {
+    margin-bottom: 40px;
+  }
 }
 
 .page-main__registration {
   margin-bottom: 150px;
+
+  @media (max-width:950px) {
+    margin-bottom: 80px;
+  }
 }

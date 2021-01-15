@@ -1,5 +1,13 @@
 .header {
   padding: 25px 40px 4px 63px;
+
+  @media (max-width:950px) {
+    padding: 15px 30px 0 53px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 10px 0 10px;
+  }
 }
 
 .header__wrapper {
@@ -14,4 +22,27 @@
 
 .header__logo-link:first-child {
   margin-right: 26px;
+}
+
+.header__logo-img--code {
+  @media (max-width: 950px) {
+   width: 160px;
+  }
+
+  @media (max-width: 768px) {
+    width: 140px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100px;
+  }
+}
+
+.header__logo-img--bank {
+  @media (max-width:768) {
+   width: 40px;
+  }
+  @media (max-width: 500x) {
+    width: 25px;
+  }
 }

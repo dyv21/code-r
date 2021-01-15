@@ -14,7 +14,7 @@
             <img
               src="img/icon-logo.svg"
               alt="логотип"
-              class="header__logo-img"
+              class="header__logo-img header__logo-img--bank"
               width="50"
               height="50"
             />
@@ -23,13 +23,14 @@
             <img
               src="img/icon-code-r.svg"
               alt="code-r"
-              class="header__logo-img header__logo-code"
+              class="header__logo-img header__logo-img--code"
               width="190"
               height="50"
             />
           </a>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--no-js main-nav--closed">
+          <button type="button" class="main-nav__toggle "></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Описание</a>
@@ -360,7 +361,7 @@
                 Используем OpenSource-решения и практики DevOps, дружим с Agile
                 и Scrum, внедряем LeSS-фреймворк. Изучаем и применяем блокчейн:
                 провели три крупные сделки, последнюю — на проприетарной
-                платформе R-chain/p>
+                платформе R-chain
               </p>
             </li>
             <li class="features__item">
@@ -691,7 +692,6 @@
                       name="user-data"
                       id="phone"
                       placeholder="+7 (___) ___-__-__"
-                      pattern="^\+7\d{3}\d{7}$"
                       maxlength="12"
                     />
                   </li>
@@ -811,15 +811,16 @@
     <footer class="page-foote footer container">
       <div class="footer__logo">
         <a href="#" class="footer__logo-link">
-          <img src="img/footer-logo.svg" alt="" width="200" height="" />
+          <img src="img/footer-logo.svg" class="footer__logo-link" alt="" width="200" height="" />
         </a>
       </div>
       <div class="footer__social">
         <p class="footer__text">АО «Райффайзенбанк»</p>
         <ul class="footer__social-list">
-          <li class="ooter__social-tem">
+          <li class="footer__social-tem">
             <a href="#"
               ><img
+                class="footer__social-img"
                 src="img/icon-facebook.svg"
                 alt="Facebook"
                 width="65"
@@ -828,12 +829,12 @@
           </li>
           <li class="footer__social-tem">
             <a href="#"
-              ><img src="img/icon-vk.svg" alt="VK" width="65" height="65"
+              ><img src="img/icon-vk.svg"  class="footer__social-img" alt="VK" width="65" height="65"
             /></a>
           </li>
           <li class="footer__social-tem">
             <a href="#"
-              ><img src="img/icon-world.svg" alt="" width="65" height="65"
+              ><img src="img/icon-world.svg"  class="footer__social-img" alt="" width="65" height="65"
             /></a>
           </li>
         </ul>
