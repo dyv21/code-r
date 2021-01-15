@@ -27,7 +27,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css/"))
+    .pipe(gulp.dest("docs/css/"))
     .pipe(sync.stream());
 }
 
@@ -54,7 +54,7 @@ exports.images = images;
 const webp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
   .pipe(gulpWebp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("docs/img"))
 }
 exports.webp = webp;
 
@@ -63,7 +63,7 @@ const sprite = () => {
   return gulp.src("source/img/**/*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("docs/img"))
 }
 exports.sprite = sprite
 
@@ -72,7 +72,7 @@ exports.sprite = sprite
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build/"
+      baseDir: "docs/"
     },
     cors: true,
     notify: false,
@@ -91,7 +91,7 @@ const copy = () => {
   ], {
     base: "source/"
   })
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("docs"));
 };
 
 exports.copy = copy;
@@ -99,7 +99,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del("docs");
 };
 
 exports.clean = clean;
@@ -109,7 +109,7 @@ exports.clean = clean;
 const htmlMin = () => {
 return gulp.src("source/*.html")
 .pipe(htmlmin({ collapseWhitespace: true }))
-.pipe(gulp.dest("build"));
+.pipe(gulp.dest("docs"));
 }
 
 exports.htmlMin = htmlMin;
@@ -120,7 +120,7 @@ const jsMin = () => {
   return gulp.src("source/js/**.js")
     .pipe(jsmin())
     .pipe(rename({suffix: ".min"}))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("docs/js"));
 }
 exports.jsMin = jsMin;
 
@@ -134,10 +134,10 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-exports.build = gulp.series(
+exports.docs = gulp.series(
   clean, copy, htmlMin, styles, jsMin, images, webp, sprite
 );
 
 exports.start = gulp.series(
-  exports.build, server, watcher
+  exports.docs, server, watcher
 );
